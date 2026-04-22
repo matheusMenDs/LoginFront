@@ -1,0 +1,267 @@
+.container {
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid #b95a89;
+    padding: 40px;
+    border-radius: 10px;   
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #fad1ff;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 15px;
+    color: #faceff;
+}
+
+.container .input-field {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px auto;
+}
+
+.input-field input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #d675a5;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 25px;
+}
+
+.input-field input::placeholder {
+    color: #f8dafc;
+}
+
+.input-field .icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #f8b9ff;
+}
+
+.container .recall-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.recall-forget label {
+    color: #fff;
+}
+
+.recall-forget input {
+    margin-right: 5px;
+}
+
+.recall-forget a,
+.signup-link p a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto; /* Garante que o clique funcione */
+  z-index: 999; /* Coloca o link acima de outros elementos */
+  position: relative;
+}
+
+.recall-forget a:hover,
+.signup-link p a:hover {
+  text-decoration: underline;
+}
+
+/* Garante que os links sejam clicáveis */
+.recall-forget,
+.signup-link {
+  pointer-events: auto;
+}
+
+.container button {
+    width: 100%;
+    height: 50px;
+    background-color: #f8b5ff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: none;
+}
+
+.container button:hover {
+    background-color: #e679af;
+    transition: background-color 0.15s ease 0.15s;
+}
+
+.container .signup-link {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+    text-shadow: none;
+}
+
+.signup-link p {
+    color: #ffb3f5;
+}
+
+.success-message {
+  text-align: center;
+  padding: 2rem;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  color: #155724;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.success-message h2 {
+  margin-bottom: 1rem;
+  color: #155724;
+}
+
+.success-message button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 0.75rem;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Estilos específicos para tela de registro */
+.container.register {
+  width: 450px; /* Mantém a mesma largura */
+}
+
+.container.register h1 {
+  color: #fad1ff;
+  font-size: 28px; /* Ligeiramente menor para caber melhor */
+}
+
+.container.register h3 {
+  color: #faceff;
+  margin-bottom: 10px;
+}
+
+/* Estilos específicos para tela de esqueci a senha */
+.container.forgot {
+  width: 450px;
+}
+
+.container.forgot h1 {
+  color: #fad1ff;
+  font-size: 24px; /* Menor para títulos longos */
+}
+
+.container.forgot h3 {
+  color: #faceff;
+  margin-bottom: 20px;
+}
+
+/* Estilos para mensagens de sucesso/erro adaptados ao tema */
+.success-message {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(212, 237, 218, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid #28a745;
+  border-radius: 10px;
+  color: #d4edda;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.success-message h2 {
+  margin-bottom: 1rem;
+  color: #d4edda;
+}
+
+.success-message button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.success-message button:hover {
+  background: #218838;
+}
+
+.error-message {
+  background: rgba(248, 215, 218, 0.2);
+  backdrop-filter: blur(10px);
+  color: #f8d7da;
+  padding: 0.75rem;
+  border: 2px solid #dc3545;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Estilos para links de navegação entre telas */
+.back-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.back-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes para campos extras na tela de registro */
+.register .input-field {
+  margin: 20px auto; /* Menor espaçamento para caber mais campos */
+}
+
+/* Responsividade mantida */
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+
+
+
+
+
+
